@@ -15,19 +15,20 @@ const config: Config = {
       },
       colors: {
         primary: {
-          "100": "#F7AD4C",
-          DEFAULT: "#F08D0C",
+          "100": "#FFE8F0",
+          DEFAULT: "#F7AD4C",
         },
         secondary: "#FBE843",
         black: {
           "100": "#333333",
           "200": "#141413",
           "300": "#7D8087",
-          DEFAULT: "#000000",
+          DEFAULT: "#4E5A61",
         },
         white: {
           "100": "#F7F7F7",
-          DEFAULT: "#FFFFFF",
+          // DEFAULT: "#FFFFFF",
+          DEFAULT: "#43A8E0",
         },
       },
       fontFamily: {
