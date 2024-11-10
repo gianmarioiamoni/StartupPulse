@@ -151,7 +151,7 @@
   }
 
   .startup-card_date {
-    @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full group-hover:bg-white-100;
+    @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full group-hover:bg-primary;
   }
 
   .startup-card_desc {
@@ -163,7 +163,7 @@
   }
 
   .startup-card_btn {
-    @apply rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3 !important;
+    @apply rounded-full bg-black font-medium text-[16px] text-white px-5 py-3 !important;
   }
 
   .startup-card_skeleton {
