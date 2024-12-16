@@ -3,10 +3,15 @@ import StartupCard, { StartupTypeCard} from "../../components/StartupCard";
 import { STARTUPS_QUERY } from "../../sanity/lib/queries";
 
 import { sanityFetch, SanityLive } from "../../sanity/lib/live"
+import { auth } from "../../auth"
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ query?: string }> }) {
   const query = (await searchParams).query;
   const params = { search: query || null };
+
+  // extract a session and get the sanity id of the author
+  const session = await auth();
+  console.log(session?.id)
 
   const {data: posts} = await sanityFetch({query: STARTUPS_QUERY, params});
 
