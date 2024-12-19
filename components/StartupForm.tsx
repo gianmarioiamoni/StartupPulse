@@ -10,7 +10,6 @@ import { formSchema } from '@/lib/validation';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { useRouter } from 'next/navigation';
-import { Result } from 'postcss';
 import { createPitch } from '@/lib/actions';
 
 const StartupForm = () => {
@@ -68,7 +67,6 @@ const StartupForm = () => {
     const [state, formAction, isPending] = useActionState(
         handleFormSubmit,
         { error: "", status: "INITIAL"});
-
     
 
     return (
@@ -151,7 +149,6 @@ const StartupForm = () => {
 
             </div>
 
-            
             {/* Image Link */}
             <div>
                 <label
